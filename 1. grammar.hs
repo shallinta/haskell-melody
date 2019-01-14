@@ -54,7 +54,7 @@ first' [] = Nothing
 first' (x:_) = Just x
 first' []  -- Nothing
 first' [1,2,3]  -- Just 1
-isRtTriangle tuple :: (Num a, Eq a) => (a, a, a) -> Bool
+isRtTriangle :: (Num a, Eq a) => (a, a, a) -> Bool
 isRtTriangle (x,y,z) = (x*x + y*y) == z*z
 isRtTriangle t2  -- True
 returnJust :: Maybe a -> a
